@@ -1,0 +1,162 @@
+:root {
+  --gren-gray-scale-900: #002603;
+  --gren-gray-scale-800: #173b1a;
+  --gren-gray-scale-700: #2b572e;
+  --gren-gray-scale-600: #406b42;
+  --gren-gray-scale-500: #618062;
+  --gren-gray-scale-400: #7a997c;
+  --gren-gray-scale-300: #96b297;
+  --gren-gray-scale-200: #b4ccb4;
+  --gren-gray-scale-100: #dae5da;
+  --gren-gray-scale-50: #edf2ee;
+  --gray-scale-gray--900: #1a1a1a;
+  --gray-scale-gray--800: #333;
+  --gray-scale-gray--700: #4d4d4d;
+  --gray-scale-gray--600: #666;
+  --gray-scale-gray--500: #808080;
+  --gray-scale-gray--400: #999;
+  --gray-scale-gray--300: #b3b3b3;
+  --gray-scale-gray--200: #ccc;
+  --gray-scale-gray--100: #e5e5e5;
+  --gray-scale-gray--50: #f2f2f2;
+  --gray-scale-white: #fff;
+  --branding-success-bright: #84d187;
+  --branding-success: #00b207;
+  --branding-success-dark: #2c742f;
+  --branding-warning: #ff8a00;
+  --branding-error: #ea4b48;
+  --primary-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+/* =============== CSS HEADER START ====================*/
+.first_header {
+  background-color: var(--gray-scale-gray--800);
+  padding: 13px 0;
+}
+
+.first_header .location {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: var(--gray-scale-gray--300);
+}
+
+.first_header .header_dropdown {
+  padding-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.first_header .header_currency {
+  padding-left: 20px;
+}
+
+.first_header .header_currency .header_devider {
+  color: var(--gray-scale-gray--300);
+  ;
+}
+
+.first_header .header_dropdown select {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--gray-scale-gray--300);
+  background-color: transparent;
+  border: none;
+}
+
+.first_header a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--gray-scale-gray--300);
+  text-decoration: none;
+}
+
+.second_header {
+  padding: 10px 0;
+}
+
+.second_header form {
+  position: relative;
+  display: flex;
+}
+
+.second_header form input {
+  padding: 12px 44px;
+  display: inline-block;
+  border: 1px solid var(--gray-scale-gray--500);
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  width: 75%;
+
+}
+
+.second_header form .search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+
+.second_header form button {
+  border: none;
+  padding: 14px 24px;
+  display: inline-block;
+  background: var(--branding-success);
+  color: var(--gray-scale-gray--100);
+  border-radius: 0 5px 5px 0;
+}
+
+.second_header .cart {
+  position: relative;
+}
+
+.second_header .cart small {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: var(--branding-success-dark);
+  color: var(--gray-scale-gray--100);
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  left: 20px;
+  top: 5px;
+}
+
+.second_header .divider {
+  position: relative;
+}
+
+.second_header .divider::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 24px;
+  right: -40%;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--gray-scale-gray--200);
+
+}
+.second_header .mobile_menu{
+  cursor: pointer;
+}
+
+/* =============== CSS HEADER END ======================*/
