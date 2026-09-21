@@ -57,7 +57,6 @@ body {
 
 .first_header .header_currency .header_devider {
   color: var(--gray-scale-gray--300);
-  ;
 }
 
 .first_header .header_dropdown select {
@@ -100,7 +99,6 @@ body {
   outline: none;
   border-radius: 5px 0 0 5px;
   width: 75%;
-
 }
 
 .second_header form .search {
@@ -153,10 +151,88 @@ body {
   top: 50%;
   transform: translateY(-50%);
   border: 1px solid var(--gray-scale-gray--200);
-
 }
-.second_header .mobile_menu{
+.second_header .mobile_menu {
   cursor: pointer;
 }
 
 /* =============== CSS HEADER END ======================*/
+
+.search_popup {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 120px;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.search_popup.search_popu_active {
+  visibility: visible;
+  opacity: 1;
+}
+.search_popup .container {
+  background-color: var(--gray-scale-gray--50);
+  /* margin-top: 3%; */
+  overflow-y: auto;
+  padding: 30px;
+  height: 100%;
+}
+
+.search_popup .inner_search_box {
+  background-color: #fff;
+}
+.search_popup h4 {
+  font-size: 18px;
+  color: var(--branding-success);
+  margin-bottom: 20px;
+}
+.search_popup ul li {
+  font-size: 14px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.search_popup h5 {
+  font-size: 16px;
+  color: var(--branding-success);
+}
+.search_popup p {
+  font-size: 14px;
+  color: var(--gray-scale-gray--900);
+  line-height: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.search_popup .category_search_cart a {
+  text-decoration: none;
+  background: var(--gren-gray-scale-700);
+  color: var(--gray-scale-gray--50);
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.search_close {
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--gray-scale-gray--100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--branding-success);
+  color: var(--gray-scale-gray--100);
+  transition: 0.4s;
+}
+.search_close:hover {
+  background-color: var(--gray-scale-gray--100);
+  color: var(--branding-success);
+  border-radius: 10px;
+}

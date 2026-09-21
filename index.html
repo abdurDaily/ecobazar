@@ -93,7 +93,7 @@
                                     <path d="M17.5 17.5L13.875 13.875" stroke="#1A1A1A" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg></span>
-                            <input type="text" placeholder="search">
+                            <input class="search_input" type="text" placeholder="search">
                             <button type="submit">search</button>
                         </form>
                     </div>
@@ -129,7 +129,8 @@
 
                     </div>
                 </div>
-                <span class="mobile_menu d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu"><i class="fa-solid fa-bars"></i></span>
+                <span class="mobile_menu d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu"><i class="fa-solid fa-bars"></i></span>
 
             </div>
         </div>
@@ -170,6 +171,77 @@
         </div>
     </div>
     <!-- mobile menu end -->
+
+
+    <!-- search popup -->
+    <div class="search_popup">
+        <div class="container">
+            <div class="row">
+                <!-- categories -->
+                <div class="col-lg-3">
+                    <h4>Trending Search</h4>
+                    <ul>
+                        <li>OnePlus Buds 4</li>
+                        <li>16 Pro Max</li>
+                        <li>S25 Ultra</li>
+                        <li>z fold7</li>
+                    </ul>
+                </div>
+                <!-- categories result  -->
+                <div class="col-lg-9">
+                    <h4>Trending Products</h4>
+
+
+                    <div class="row g-3">
+                        
+
+                        <div class="col-lg-4 category_search_cart">
+                            <div class="p-3 inner_search_box ">
+                                <div><img class="img-fluid" src="./assets/images/products/1.png" alt=""></div>
+                                <div>
+                                    <h5>Surjapur Mango</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, minus!</p>
+                                    <a href="#">see more</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 category_search_cart">
+                            <div class="p-3 inner_search_box ">
+                                <div><img class="img-fluid" src="./assets/images/products/2.png" alt=""></div>
+                                <div>
+                                    <h5>Surjapur Mango</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, minus!</p>
+                                    <a href="#">see more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 category_search_cart">
+                            <div class="p-3 inner_search_box ">
+                                <div><img class="img-fluid" src="./assets/images/products/3.png" alt=""></div>
+                                <div>
+                                    <h5>Surjapur Mango</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, minus!</p>
+                                    <a href="#">see more</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="search_close">
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- search popup end -->
 
 
 
