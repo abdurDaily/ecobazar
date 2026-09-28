@@ -152,6 +152,7 @@ body {
   transform: translateY(-50%);
   border: 1px solid var(--gray-scale-gray--200);
 }
+
 .second_header .mobile_menu {
   cursor: pointer;
 }
@@ -174,6 +175,7 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
 .search_popup .container {
   background-color: var(--gray-scale-gray--50);
   /* margin-top: 3%; */
@@ -185,11 +187,13 @@ body {
 .search_popup .inner_search_box {
   background-color: #fff;
 }
+
 .search_popup h4 {
   font-size: 18px;
   color: var(--branding-success);
   margin-bottom: 20px;
 }
+
 .search_popup ul li {
   font-size: 14px;
   line-height: 30px;
@@ -200,6 +204,7 @@ body {
   font-size: 16px;
   color: var(--branding-success);
 }
+
 .search_popup p {
   font-size: 14px;
   color: var(--gray-scale-gray--900);
@@ -207,6 +212,7 @@ body {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
 .search_popup .category_search_cart a {
   text-decoration: none;
   background: var(--gren-gray-scale-700);
@@ -216,6 +222,7 @@ body {
   margin-top: 5px;
   font-size: 14px;
 }
+
 .search_close {
   position: absolute;
   right: 30px;
@@ -231,8 +238,70 @@ body {
   color: var(--gray-scale-gray--100);
   transition: 0.4s;
 }
+
 .search_close:hover {
   background-color: var(--gray-scale-gray--100);
   color: var(--branding-success);
   border-radius: 10px;
+}
+
+#nav .nav_bar_dropdown button {
+  border-radius: 0;
+  background: var(--branding-success);
+  border: none;
+  padding: 16px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#nav .dropdown-toggle::after {
+  display: none;
+}
+
+#nav .nav_bar_dropdown_show.show {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#nav .navbar-nav a {
+  display: inline-block;
+  padding: 0 16px;
+}
+
+#nav .nav_menu_dropdown a {
+  background: transparent;
+  border: none;
+  color: var(--gray-scale-gray--500);
+}
+
+#nav .nav_menu_dropdown_show.show {
+  border-radius: 0;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 20px;
+}
+
+#nav .nav_menu_dropdown_show a {
+  margin: 5px 0;
+}
+
+#nav a {
+  color: var(--gray-scale-gray--500);
+}
+
+#nav .phone_number a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--900);
+  text-decoration: none;
+}
+
+#nav {
+  box-shadow: rgba(0, 0, 0, 0.082) 0px 1px 2px 0px;
+  padding: 0;
 }

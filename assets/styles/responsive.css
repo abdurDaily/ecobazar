@@ -3,7 +3,17 @@
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         padding: 15px;
     }
-    .second_header .mobile_menu{
+
+    .second_header .mobile_menu {
         font-size: 23px;
+    }
+
+    #nav {
+
+        display: none;
+    }
+
+    .offcanvas-start{
+        max-width: 85%;
     }
 }
