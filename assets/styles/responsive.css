@@ -13,7 +13,15 @@
         display: none;
     }
 
-    .offcanvas-start{
+    .offcanvas-start {
         max-width: 85%;
+    }
+
+
+    #hero .details{
+        text-align: center;
+    }
+    #hero .details h2 {
+        font-size: 36px;
     }
 }

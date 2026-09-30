@@ -305,3 +305,94 @@ body {
   box-shadow: rgba(0, 0, 0, 0.082) 0px 1px 2px 0px;
   padding: 0;
 }
+
+
+/* =============== CSS HERO START ====================*/
+#hero .details h6 {
+  font-family: "Segoe Script", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--branding-success);
+}
+
+#hero .details h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  color: var(--gren-gray-scale-900);
+}
+
+#hero .details p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-500);
+}
+
+#hero .details a {
+  display: inline-flex;
+  gap: 16px;
+  background-color: var(--branding-success);
+  padding: 16px 40px;
+  border-radius: 43px;
+  color: var(--gray-scale-gray--100);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#hero .details a:hover {
+  background-color: transparent;
+  outline: 1px solid var(--branding-success);
+  color: var(--branding-success);
+}
+
+#hero .next-btn,
+#hero .prev-btn {
+  border: 1px solid var(--gren-gray-scale-100);
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+#hero .prev-btn {
+  left: 0;
+}
+
+#hero .slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+#hero .slick-dots button {
+  background-color: var(--gren-gray-scale-200);
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: none;
+  margin: 0 4px;
+  border-radius: 50px;
+  font-size: 0;
+  /* color: transparent; */
+}
+
+#hero .slick-dots li.slick-active button {
+  background-color: var(--branding-success);
+  width: 24px;
+}
+
+/* =============== CSS HERO END ======================*/
