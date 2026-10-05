@@ -306,7 +306,6 @@ body {
   padding: 0;
 }
 
-
 /* =============== CSS HERO START ====================*/
 #hero .details h6 {
   font-family: "Segoe Script", sans-serif;
@@ -396,3 +395,115 @@ body {
 }
 
 /* =============== CSS HERO END ======================*/
+.mix {
+  display: none;
+}
+
+#product .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+#product .heading h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gray-scale-gray-–-900);
+}
+#product .btns ul {
+  display: flex;
+  gap: 48px;
+  list-style-type: none;
+  margin-top: 10px;
+}
+#product .btns ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--500);
+  cursor: pointer;
+  position: relative;
+}
+#product .btns ul li.active {
+  color: var(--branding-success);
+}
+#product .btns ul li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: var(--branding-success);
+  right: -20px;
+}
+#product .btns ul li:last-child::after {
+  display: none;
+}
+
+#product .product_body {
+  display: flex;
+}
+#product .product_body .mix {
+  width: 25%;
+  border: 1px solid var(--gren-gray-scale-100);
+  border-radius: 0;
+}
+#product .product_body .mix:hover {
+  box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+  border: 1px solid var(--branding-success-dark);
+}
+#product .product_body #Grid {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0;
+}
+#product .details {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#product .details h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-700);
+}
+#product .details b {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-900);
+}
+#product .details .icons {
+  margin-top: 10px;
+}
+#product .details .icons span.active {
+  color: #ff8a00;
+}
+#product .details .icons span {
+  color: #cccccc;
+}
+#product .product_cart {
+  width: 50px;
+  height: 50px;
+  background-color: #DAE5DA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#product .product_body .mix:hover .product_cart {
+  background-color: #00b207;
+}
+#product .product_body .mix:hover .product_cart span svg path {
+  stroke: #ffffff;
+}
